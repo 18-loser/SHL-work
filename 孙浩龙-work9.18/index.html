@@ -15,14 +15,12 @@
         var inp2 = document.getElementById('inp2');
         var btn = document.getElementById('btn');
         btn.onclick = function(){
-            var a = Number(inp1.value);
-            var b = Number(inp2.value);
-             //console.log(Number(inp1.value));
-             //console.log(Number(inp2.value));
-             if(a % 1 === 0&&b % 1 === 0){
-                    txt.innerHTML = a + b;
+             if(isNaN(inp1.value)||isNaN(inp2.value)==true){
+                    alert('请输入数字')
                 }else{
-                    alert('请输入整数')
+                    var a = parseInt(inp1.value);
+                    var b = parseInt(inp2.value);
+                    txt.innerHTML = a + b;
                 }
         }
         
