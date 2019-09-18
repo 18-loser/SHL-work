@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+</head>
+<body>
+    <div id="txt"></div>
+    <input type="text" id="inp1" placeholder="输入数据1">
+    <input type="text" id="inp2" placeholder="输入数据2">
+    <button id="btn">计算</button>
+    <script>
+        var txt = document.getElementById('txt');
+        var inp1 = document.getElementById('inp1');
+        var inp2 = document.getElementById('inp2');
+        var btn = document.getElementById('btn');
+        btn.onclick = function(){
+            var a = Number(inp1.value);
+            var b = Number(inp2.value);
+             //console.log(Number(inp1.value));
+             //console.log(Number(inp2.value));
+             if(a % 1 === 0&&b % 1 === 0){
+                    txt.innerHTML = a + b;
+                }else{
+                    alert('请输入整数')
+                }
+        }
+        
+    </script>
+</body>
+</html>
