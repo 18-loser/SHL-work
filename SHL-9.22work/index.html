@@ -5,18 +5,25 @@
     <title>Document</title>
 </head>
 <body>
-    <script>
-        var a = Number(prompt("输入数字"));
-        var b = String(prompt("输入+-*/"));
-        var c = Number(prompt("输入数字"));
-        var d = eval("a"+b+"c");
-        //console.log(d); 测试d的值
-       // console.log(typeof(a));// 测试b的数据类型
-        //console.log(isNaN(a.value)); 测试a的数据类型是否正确
-     function test(){
-        typeof(a) == 'number' && typeof(b) == 'string' && typeof(c) == 'number' ? alert(d) : alert("请输入正确的数字或运算符");
-     }
-     test();
-    </script>
+	<button id="one">取款按钮<tton>
+	<script type="text/javascript">
+		var btn = document.getElementById('one');
+	    var ic = Number(prompt('请输入您的卡号:123456789'));
+	    var pw = Number(prompt('请输入您的密码:123456'));
+	     if(ic=='123456789'&&pw=='123456'){
+	        alert('您的余额为100000元');
+	     }else{
+	        alert('您输的账号或密码不正确');
+	     }
+		btn.onclick = function (){
+			var qumy= Number(prompt('请输入您要取的金额'));
+		  if(pa<=100000){
+             alert('您的余额为：'+(100000-pa));
+          }else{
+             alert('您的余额不足');
+          }
+		 }
+		
+	</script>
 </body>
 </html>
