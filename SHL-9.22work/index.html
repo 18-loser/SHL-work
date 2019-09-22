@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a = Number(prompt("输入数字"));
+        var b = String(prompt("输入+-*/"));
+        var c = Number(prompt("输入数字"));
+        var d = eval("a"+b+"c");
+        //console.log(d); 测试d的值
+       // console.log(typeof(a));// 测试b的数据类型
+        //console.log(isNaN(a.value)); 测试a的数据类型是否正确
+     function test(){
+        typeof(a) == 'number' && typeof(b) == 'string' && typeof(c) == 'number' ? alert(d) : alert("请输入正确的数字或运算符");
+     }
+     test();
+    </script>
+</body>
+</html>
