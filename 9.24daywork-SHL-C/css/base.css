@@ -1,0 +1,50 @@
+/*重写css样式*/
+body{
+	margin: 0;
+	padding: 0;
+	font-family: "Helvetica","Arial",sans-serif;
+	font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+p,ul,ol,dl,dd,h1,h2,h3,h4,h5,h6{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+a{
+	color: #666;
+	text-decoration: none;
+}
+a:hover{
+	color: #ff4040;
+}
+.main{
+	max-width: 900px;
+    margin: auto;
+}
+/*img{
+	vertical-align: middle;
+}*/
+/*内容生成解决浮动对父元素造成的影响*/
+/*.clear:after{
+	content: "";
+	display: block;
+	clear: both;
+}*/
+.lf{
+	float:left;
+}
+.rt{
+	float: right;
+}
+img{
+	border: 0;
+}
+h3{
+	font-family: "Roboto","Helvetica","Arial",sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+}
