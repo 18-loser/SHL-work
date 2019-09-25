@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<ul id="ul">
+			<li>苹果</li>
+			<li id="jz">橘子</li>
+			<li>香蕉</li>
+		</ul>
+		<script type="text/javascript">
+			var ul = document.getElementById('ul');
+			var li = document.createElement('li');
+			ul.appendChild(li);
+			ul.insertBefore(li,jz);
+			var t = document.createTextNode('火龙果');
+			li.appendChild(t);
+		</script>
+	</body>
+</html>
