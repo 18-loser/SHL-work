@@ -1,0 +1,54 @@
+/*重写css样式*/
+body{
+	margin: 0;
+	padding: 0;
+	font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    color: #333;
+    border: 0px;
+    outline: 0px;
+    font-size: 100%;
+    vertical-align: baseline;
+	box-sizing: border-box;
+}
+p,ul,ol,dl,dd,h1,h2,h3,h4,h5,h6{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+a{
+	color: inherit;
+	text-decoration: none;
+	font-family: sans-serif;
+}
+a:hover{
+	color: #ff4040;
+}
+img{
+	vertical-align: middle;
+	border: 0;
+	max-width: 100%;
+	vertical-align: middle;
+}
+/*内容生成解决浮动对父元素造成的影响*/
+.clear:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.lf{
+	float:left;
+}
+.rt{
+	float: right;
+}
+div.main{
+	width: 1200px;
+	margin: 0 auto;
+}
+strong{
+	color: #333;
+    font-size: 14px;
+    font-family: "microsoft yahei";
+    font-weight: normal;
+}
