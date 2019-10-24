@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<!--一个输入框 一个按钮 二个数组 所有人名字 -->
+		<input type="text" id="ipt"/>
+		<button id="btn">点击</button>
+		<div id="div1"></div>
+		<div id="div2"></div>
+		<script type="text/javascript">
+			var ipt = document.getElementById('ipt');
+			var btn = document.getElementById('btn');
+			var div1 = document.getElementById('div1');
+			var div2 = document.getElementById('div2');
+			var names = ['李家光','谢翰林','王三','刘四 ','孙浩龙','章鱼斌'];
+			var nnames = [];
+			var b = names.join(',');
+			div1.innerHTML ='姓名:'+ b;
+			btn.onclick = function(){
+				var ipt2 = ipt.value;
+				nnames.push(ipt2);
+				console.log(nnames);
+				var n = nnames.join(',');	
+				console.log(n);	  
+				var f =new RegExp("[^" +n+']+','g');
+				console.log(f)
+				var g=b.match(f);
+				div2.innerHTML='未到:'+g;
+			console.log(nnames);
+			}
+
+		</script>
+	</body>
+</html>
