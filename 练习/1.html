@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" style="background-color: #e169c3;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+    <style>
+        div{
+            width: 1200px;
+            margin: 100px auto;
+        }
+        div > li{
+            width: 50px;
+            height: 50px;
+            border: 5px solid white;
+            border-radius: 50%;
+            background-color: blueviolet;
+            list-style: none;
+            display: inline-block;
+        }
+        div > div{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: #e169c3;
+            display: inline-block;
+            border: 5px solid white;
+            margin: 0;
+        }
+        
+       
+    </style>
+</head>
+<body>
+    <div>
+        <div></div>
+        <li class="li-1" data-color="#e169c3" style="background-color: #e169c3;"></li>
+        <li class="li-2" data-color="#b569e1" style="background-color: #b569e1;"></li>
+        <li class="li-3" data-color="#7169e1" style="background-color: #7169e1;"></li>
+        <li class="li-4" data-color="#69b8e1" style="background-color: #69b8e1;"></li>
+        <li class="li-5" data-color="#69e1d4" style="background-color: #69e1d4;"></li>
+        <li class="li-6" data-color="#6ce169" style="background-color: #6ce169;"></li>
+        <li class="li-7" data-color="#6ce169" style="background-color: #6ce169;"></li>
+        <li class="li-8" data-color="#bee169" style="background-color: #bee169;"></li>
+        <li class="li-9" data-color="#83091d" style="background-color: #83091d;"></li>
+        <li class="li-10" data-color="#83091td" style="background-color: #83091d;"></li>
+    </div>
+    <script>
+        $("div>li").hide();
+        var $a=0;
+        $("div>div").click(function(){
+            
+            $a++;
+            console.log($a%2);
+            if($a%2==0){
+                $("div>li").hide("slow");
+            }else{
+                $("div>li").show("slow");
+            }
+        })
+
+        $(".li-1").click(function(){
+            var a = $(".li-1").data("color");
+            $("div>div").css("background",a);
+            $("html").css("background",a);
+        })
+        $(".li-2").click(function(){
+            var a = $(".li-2").data("color");
+            $("div>div").css("background",a);
+            $("html").css("background",a);
+        })
+        $(".li-3").click(function(){
+            var a = $(".li-3").data("color");
+            $("div>div").css("background",a);
+            $("html").css("background",a);
+        })
+       
+        $(".li-4").click(function(){
+            var a = $(".li-4").data("color");
+            $("div>div").css("background",a);
+            $("html").css("background",a);
+        })
+        $(".li-5").click(function(){
+            var a = $(".li-5").data("color");
+            $("div>div").css("background",a);
+            $("html").css("background",a);
+        })
+        $(".li-6").click(function(){
+            var a = $(".li-6").data("color");
+            $("div>div").css("background",a);
+            $("html").css("background",a);
+        })
+        $(".li-7").click(function(){
+            var a = $(".li-7").data("color");
+            $("div>div").css("background",a);
+            $("html").css("background",a);
+        })
+        $(".li-8").click(function(){
+            var a = $(".li-8").data("color");
+            $("div>div").css("background",a);
+            $("html").css("background",a);
+        })
+        $(".li-9").click(function(){
+            var a = $(".li-9").data("color");
+            $("div>div").css("background",a);
+            $("html").css("background",a);
+        })
+        $(".li-10").click(function(){
+            var a = $(".li-10").data("color");
+            $("div>div").css("background",a);
+            $("html").css("background",a);
+        })
+    </script>
+</body>
+</html>
